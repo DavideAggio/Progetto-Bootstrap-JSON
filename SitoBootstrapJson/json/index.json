@@ -1,0 +1,61 @@
+{
+    "meta": {
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "title": "Guida alle Socket",
+        "favicon": "img/icon.png"
+    },
+    "links": {
+        "bootstrap_css": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css",
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+        "style_css": "css/style.css"
+    },
+    "navbar": {
+        "brand": {
+            "href": "index.html",
+            "icon": "fas fa-plug",
+            "text": "Socket Guide"
+        },
+        "links": [
+            { "href": "index.html", "text": "Home" },
+            { "href": "socket.html", "text": "Socket" },
+            { "href": "osi.html", "text": "Modello OSI" },
+            { "href": "tcp_udp.html", "text": "TCP/UDP" },
+            { "href": "glossario.html", "text": "Glossario" }
+        ]
+    },
+    "hero_section": {
+        "heading": "Benvenuto nella Guida alle Socket",
+        "paragraph": "Scopri come le socket facilitano la comunicazione tra i dispositivi in rete.",
+        "button": { "href": "socket.html", "text": "Scopri di più" }
+    },
+    "info_section": [
+        {
+            "title": "Socket",
+            "icon": "fas fa-plug",
+            "description": "Impara come funzionano e come vengono utilizzate per la comunicazione.",
+            "button": { "href": "socket.html", "text": "Scopri di più" }
+        },
+        {
+            "title": "Modello OSI",
+            "icon": "fas fa-network-wired",
+            "description": "Scopri il livello di trasporto e come si integra con le socket.",
+            "button": { "href": "osi.html", "text": "Scopri di più" }
+        },
+        {
+            "title": "Protocolli TCP/UDP",
+            "icon": "fas fa-exchange-alt",
+            "description": "Confronta i protocolli e scegli il migliore per le tue esigenze.",
+            "button": { "href": "tcp_udp.html", "text": "Scopri di più" }
+        },
+        {
+            "title": "Glossario",
+            "icon": "fas fa-book",
+            "description": "Consulta i termini tecnici e le definizioni utilizzate nel sito.",
+            "button": { "href": "glossario.html", "text": "Scopri di più" }
+        }
+    ],
+    "footer": {
+        "text": "Davide Aggio - Classe 5F"
+    }
+}

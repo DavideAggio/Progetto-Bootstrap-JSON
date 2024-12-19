@@ -1,0 +1,79 @@
+{
+    "page": {
+      "title": "Modello OSI"
+    },
+    "sections": [
+      {
+        "title": "Introduzione al Modello OSI",
+        "content": [
+          "Il modello OSI (Open Systems Interconnection) è uno standard creato dall'ISO (International Organization for Standardization) per descrivere come i dati vengono trasmessi attraverso una rete. È composto da 7 livelli, ognuno con una funzione specifica, e viene utilizzato come riferimento per comprendere e progettare architetture di rete.",
+          "Il modello OSI consente l'interoperabilità tra dispositivi e protocolli di diversi produttori, offrendo un framework teorico che separa le diverse responsabilità della comunicazione in rete. I suoi sette livelli sono:"
+        ],
+        "list": [
+          "Livello 1: Fisico",
+          "Livello 2: Data Link (Collegamento dati)",
+          "Livello 3: Rete",
+          "Livello 4: Trasporto",
+          "Livello 5: Sessione",
+          "Livello 6: Presentazione",
+          "Livello 7: Applicazione"
+        ],
+        "sources": [
+          {
+            "text": "IBM - OSI Model Overview",
+            "href": "https://www.ibm.com/docs/en/aix/7.2?topic=concepts-tcpip"
+          },
+          {
+            "text": "GeeksforGeeks - OSI Model",
+            "href": "https://www.geeksforgeeks.org/layers-of-osi-model/"
+          }
+        ]
+      },
+      {
+        "title": "Il Livello 4: Trasporto",
+        "content": [
+          "Il livello di trasporto del modello OSI è responsabile della consegna affidabile dei dati da un punto A a un punto B nella rete. È qui che vengono implementati i protocolli come TCP (Transmission Control Protocol) e UDP (User Datagram Protocol), che offrono servizi diversi in base alle esigenze dell'applicazione."
+        ],
+        "subsections": [
+          {
+            "title": "Funzioni principali del livello di trasporto",
+            "list": [
+              "Multiplexing e Demultiplexing: Il livello di trasporto gestisce più connessioni contemporaneamente, assegnando un numero di porta unico a ciascuna applicazione per distinguere i flussi di dati.",
+              "Affidabilità: Con il protocollo TCP, il livello di trasporto garantisce che i dati arrivino correttamente e nell'ordine previsto, utilizzando meccanismi come ritrasmissioni e controlli di errore.",
+              "Controllo del flusso: Regola la velocità di trasmissione per evitare che il destinatario venga sovraccaricato.",
+              "Controllo della congestione: Adatta la velocità di trasmissione in base alle condizioni della rete per prevenire congestioni."
+            ]
+          },
+          {
+            "title": "Protocollo TCP",
+            "content": [
+              "Il TCP è un protocollo orientato alla connessione che offre servizi di trasmissione dati affidabili. Prima di trasferire dati, stabilisce una connessione attraverso un processo chiamato 'three-way handshake'. Questo garantisce che entrambe le parti siano pronte a comunicare."
+            ]
+          },
+          {
+            "title": "Protocollo UDP",
+            "content": [
+              "L'UDP è un protocollo senza connessione, più veloce e leggero rispetto al TCP. Non fornisce meccanismi per la consegna affidabile, ma è ideale per applicazioni in tempo reale come streaming e giochi online."
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "text": "MDN - UDP Socket",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/UDPSocket"
+          },
+          {
+            "text": "Cisco - TCP Protocol",
+            "href": "https://www.cisco.com/c/en/us/support/docs/ip/transmission-control-protocol-tcp/14111-what-is-tcp.html"
+          }
+        ]
+      },
+      {
+        "title": "Conclusioni",
+        "content": [
+          "Il modello OSI e il livello di trasporto sono fondamentali per comprendere come i dati vengono trasmessi in rete. Questo livello funge da ponte tra le applicazioni e la rete fisica, garantendo che i dati vengano consegnati in modo affidabile e corretto, o ottimizzando la velocità quando l'affidabilità non è una priorità."
+        ]
+      }
+    ]
+  }
+  

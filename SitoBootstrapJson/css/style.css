@@ -1,0 +1,158 @@
+/* Importazione del font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600&display=swap');
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    background-color: #000814;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(45deg, #2a4d87, #1e3a5a);
+    padding: 1rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white !important;
+    gap: 10px; /* Spazio tra l'icona e il testo */
+}
+
+.navbar-brand img {
+    width: 35px; /* Regola la dimensione dell'icona */
+    height: 35px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    font-size: 1.1rem;
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+/* Sezione Hero */
+.hero {
+    background: url('../img/background1.png') no-repeat center center/cover;
+    background-size: cover;
+    opacity: 0.9;
+    color: white;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Pulsante stile LED */
+.btn-led {
+    background-color: #00274d;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.btn-led:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    transform: translateY(-5px);
+}
+
+/* Sezione Blu Scuro */
+.section-dark {
+    background: #00274d;
+    padding: 60px 0;
+    color: white;
+}
+
+/* Riquadri con effetto LED (uguali dimensioni) */
+.card {
+    background-color: #00274d;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.card h2, .card p {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Icona sotto il titolo nei riquadri */
+.card .icon {
+    font-size: 2rem;
+    color: white;
+    margin-top: 15px;
+}
+
+/* Effetto di animazione per il contenuto */
+.card-body {
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.card-body:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Sezione di contenuti aggiuntivi */
+.content-section {
+    padding: 40px 0;
+    background: #1b1b1b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background: #001D3D;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer a {
+    color: #ffffffcc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}

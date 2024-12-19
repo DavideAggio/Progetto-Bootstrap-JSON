@@ -1,0 +1,131 @@
+{
+    "page": {
+        "title": "Socket",
+        "favicon": "img/icon.png",
+        "css": [
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css",
+            "css/style.css"
+        ],
+        "js": [
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js",
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js",
+            "js/script.js"
+        ]
+    },
+    "navbar": {
+        "brand": {
+            "text": "Socket Guide",
+            "href": "index.html",
+            "icon": "fas fa-plug"
+        },
+        "links": [
+            { "text": "Home", "href": "index.html" },
+            { "text": "Socket", "href": "socket.html", "active": true },
+            { "text": "Modello OSI", "href": "osi.html" },
+            { "text": "TCP/UDP", "href": "tcp_udp.html" },
+            { "text": "Glossario", "href": "glossario.html" }
+        ]
+    },
+    "sections": [
+        {
+            "title": "Socket",
+            "content": []
+        },
+        {
+            "title": "Cos'è una socket?",
+            "content": [
+                "Una socket è un'interfaccia software utilizzata per consentire la comunicazione tra dispositivi in rete. In termini semplici, una socket funge da punto finale per una connessione, consentendo a due applicazioni di comunicare inviando e ricevendo dati.",
+                "Le socket sono utilizzate sia nelle comunicazioni locali, tra processi sullo stesso computer, sia nelle comunicazioni di rete, tra dispositivi separati connessi tramite internet o altre reti. Ogni socket è identificata univocamente da un indirizzo IP e da un numero di porta."
+            ],
+            "subsections": [
+                {
+                    "title": "Origine delle socket",
+                    "content": [
+                        "Il concetto di socket è nato negli anni '70 con il sistema operativo UNIX, che ha introdotto il modello client-server. Questo modello ha portato alla creazione di socket come astrazione per gestire le comunicazioni di rete."
+                    ]
+                },
+                {
+                    "title": "Perché sono importanti?",
+                    "content": [
+                        "Le socket sono fondamentali per molte applicazioni moderne, come browser web, client di posta elettronica, servizi di messaggistica e giochi online. Permettono la trasmissione di dati in modo standardizzato, indipendentemente dal tipo di rete o dal dispositivo utilizzato."
+                    ],
+                    "sources": [
+                        { "text": "GeeksforGeeks", "href": "https://www.geeksforgeeks.org/socket-programming-in-python/" },
+                        { "text": "MDN Web Docs", "href": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Tipologie di socket",
+            "content": [
+                "Le socket possono essere classificate in base al tipo di protocollo e al modo in cui gestiscono la comunicazione. Le principali tipologie sono:"
+            ],
+            "subsections": [
+                {
+                    "title": "1. Socket di tipo Stream (TCP)",
+                    "content": [
+                        "Queste socket utilizzano il protocollo TCP (Transmission Control Protocol), che garantisce una comunicazione affidabile e orientata alla connessione. Sono ideali per applicazioni che richiedono che i dati siano consegnati nell'ordine corretto e senza perdite."
+                    ],
+                    "advantages": [
+                        "Trasmissione sicura",
+                        "Ordine garantito",
+                        "Ritrasmissione automatica in caso di errore"
+                    ],
+                    "uses": ["Navigazione web", "Trasferimento di file", "Email"]
+                },
+                {
+                    "title": "2. Socket di tipo Datagram (UDP)",
+                    "content": [
+                        "Queste socket utilizzano il protocollo UDP (User Datagram Protocol), che è più veloce ma meno affidabile di TCP. Non garantiscono che i pacchetti arrivino in ordine o che vengano consegnati correttamente."
+                    ],
+                    "advantages": ["Minore overhead", "Velocità superiore"],
+                    "uses": ["Streaming video", "Giochi online", "VoIP"]
+                },
+                {
+                    "title": "3. Socket RAW",
+                    "content": [
+                        "Le socket RAW permettono un controllo diretto dei pacchetti, bypassando i protocolli standard come TCP e UDP. Sono utilizzate per scopi speciali, come l'implementazione di nuovi protocolli o l'analisi della rete."
+                    ],
+                    "uses": ["Analisi della rete", "Sviluppo di software di sicurezza"]
+                }
+            ],
+            "sources": [
+                { "text": "IBM - Sockets", "href": "https://www.ibm.com/docs/en/aix/7.2?topic=concepts-sockets" },
+                { "text": "TutorialsPoint", "href": "https://www.tutorialspoint.com/socket-programming-in-python" }
+            ]
+        },
+        {
+            "title": "Processo di comunicazione (Server e Client)",
+            "content": [
+                "Il processo di comunicazione tramite socket segue una sequenza di passaggi ben definiti, che variano leggermente a seconda del protocollo utilizzato. Ecco una panoramica del flusso tipico:"
+            ],
+            "steps": [
+                "Creazione della socket",
+                "Binding",
+                "Connessione",
+                "Scambio di dati",
+                "Chiusura della connessione"
+            ],
+            "sources": [
+                { "text": "Python Documentation", "href": "https://docs.python.org/3/library/socket.html" },
+                { "text": "GeeksforGeeks", "href": "https://www.geeksforgeeks.org/socket-programming-in-python/" }
+            ]
+        },
+        {
+            "title": "Applicazioni reali delle socket",
+            "content": [
+                "Le socket trovano applicazione in vari settori tecnologici:"
+            ],
+            "applications": [
+                { "category": "Web", "description": "Le socket sono alla base del funzionamento di HTTP/HTTPS per la navigazione web." },
+                { "category": "Giochi online", "description": "Consentono la comunicazione in tempo reale tra giocatori." },
+                { "category": "Streaming", "description": "Le socket UDP vengono spesso utilizzate per trasmettere dati multimediali." },
+                { "category": "Sicurezza", "description": "Strumenti come Wireshark utilizzano le socket per catturare e analizzare i pacchetti di rete." }
+            ]
+        }
+    ],
+    "footer": {
+        "text": "Davide Aggio - Classe 5F"
+    }
+}

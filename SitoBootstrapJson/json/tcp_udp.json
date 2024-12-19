@@ -1,0 +1,121 @@
+{
+  "page": {
+    "title": "TCP e UDP",
+    "navbar": {
+      "brand": {
+        "text": "Socket Guide",
+        "link": "index.html",
+        "icon": "fas fa-plug"
+      },
+      "links": [
+        { "text": "Home", "link": "index.html", "active": false },
+        { "text": "Socket", "link": "socket.html", "active": false },
+        { "text": "Modello OSI", "link": "osi.html", "active": false },
+        { "text": "TCP/UDP", "link": "tcp_udp.html", "active": true },
+        { "text": "Glossario", "link": "glossario.html", "active": false }
+      ]
+    }
+  },
+  "content": [
+    {
+      "title": "Introduzione",
+      "paragraphs": [
+        "TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono due protocolli fondamentali del livello di trasporto del modello OSI. Entrambi servono a trasmettere dati su una rete, ma lo fanno in modi molto diversi per soddisfare esigenze specifiche. Mentre il TCP si concentra su affidabilità e sequenzialità, l'UDP è progettato per velocità e semplicità.",
+        "Questi protocolli sono utilizzati in quasi tutte le applicazioni di rete, da siti web a giochi online, streaming, e molto altro."
+      ]
+    },
+    {
+      "title": "TCP (Transmission Control Protocol)",
+      "paragraphs": [
+        "TCP è un protocollo orientato alla connessione che garantisce una comunicazione affidabile e sequenziale tra due dispositivi in rete."
+      ],
+      "subsections": [
+        {
+          "title": "Caratteristiche principali di TCP",
+          "list": [
+            "Orientato alla connessione: Prima di trasmettere dati, TCP stabilisce una connessione tra i dispositivi usando un processo chiamato 'Three-way Handshake'.",
+            "Affidabilità: TCP garantisce che i dati siano ricevuti correttamente e nell'ordine giusto. Eventuali pacchetti persi vengono ritrasmessi.",
+            "Controllo del flusso: TCP regola la velocità di trasmissione per evitare sovraccarichi sul destinatario.",
+            "Controllo della congestione: TCP adatta la velocità di trasmissione in base alle condizioni della rete."
+          ]
+        },
+        {
+          "title": "Vantaggi di TCP",
+          "list": [
+            "Trasmissione affidabile dei dati.",
+            "Ordine garantito dei pacchetti.",
+            "Adatto per applicazioni che richiedono precisione, come email, trasferimenti di file e navigazione web."
+          ]
+        },
+        {
+          "title": "Svantaggi di TCP",
+          "list": [
+            "Maggiore overhead rispetto a UDP, che può causare ritardi.",
+            "Non adatto per applicazioni in tempo reale come streaming o giochi online."
+          ]
+        }
+      ],
+      "sources": [
+        { "text": "GeeksforGeeks - TCP", "href": "https://www.geeksforgeeks.org/tcp/" },
+        { "text": "IBM - TCP Protocol", "href": "https://www.ibm.com/docs/en/aix/7.2?topic=concepts-tcpip" }
+      ]
+    },
+    {
+      "title": "UDP (User Datagram Protocol)",
+      "paragraphs": [
+        "UDP è un protocollo senza connessione, progettato per essere leggero e veloce. A differenza di TCP, non garantisce che i pacchetti arrivino o siano in ordine."
+      ],
+      "subsections": [
+        {
+          "title": "Caratteristiche principali di UDP",
+          "list": [
+            "Senza connessione: UDP non stabilisce una connessione prima di inviare i dati, il che lo rende più rapido.",
+            "Non affidabile: I pacchetti persi non vengono ritrasmessi, e l'ordine non è garantito.",
+            "Leggerezza: L'header di UDP è molto più semplice rispetto a TCP, riducendo il carico sulla rete."
+          ]
+        },
+        {
+          "title": "Vantaggi di UDP",
+          "list": [
+            "Ideale per applicazioni in tempo reale come giochi online, VoIP e streaming video.",
+            "Minimo overhead, con trasmissione rapida dei pacchetti."
+          ]
+        },
+        {
+          "title": "Svantaggi di UDP",
+          "list": [
+            "Nessuna garanzia di affidabilità o ordine.",
+            "Non adatto per applicazioni che richiedono precisione, come email o trasferimenti di file."
+          ]
+        }
+      ],
+      "sources": [
+        { "text": "GeeksforGeeks - UDP", "href": "https://www.geeksforgeeks.org/udp/" },
+        { "text": "MDN - UDP Socket", "href": "https://developer.mozilla.org/en-US/docs/Web/API/UDPSocket" }
+      ]
+    },
+    {
+      "title": "Confronto tra TCP e UDP",
+      "table": {
+        "headers": ["Caratteristica", "TCP", "UDP"],
+        "rows": [
+          ["Tipo di protocollo", "Orientato alla connessione", "Senza connessione"],
+          ["Affidabilità", "Affidabile", "Non affidabile"],
+          ["Velocità", "Più lento", "Più veloce"],
+          ["Overhead", "Alto", "Basso"],
+          ["Ordine dei dati", "Garantito", "Non garantito"],
+          ["Applicazioni", "Web, email, FTP", "Streaming, VoIP, giochi online"]
+        ]
+      }
+    },
+    {
+      "title": "Conclusioni",
+      "paragraphs": [
+        "TCP e UDP sono entrambi essenziali nel mondo delle reti. La scelta tra i due dipende dalle esigenze dell'applicazione: TCP è perfetto per la precisione e l'affidabilità, mentre UDP eccelle in velocità e semplicità. Comprendere questi protocolli è fondamentale per progettare sistemi di rete efficienti."
+      ]
+    }
+  ],
+  "footer": {
+    "text": "Davide Aggio - Classe 5F"
+  }
+}

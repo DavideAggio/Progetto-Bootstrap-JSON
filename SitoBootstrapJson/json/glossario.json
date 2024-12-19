@@ -1,0 +1,65 @@
+{
+    "title": "Glossario",
+    "description": "In questa pagina trovi una raccolta dei termini tecnici utilizzati nel sito, con definizioni concise e link alle pagine o sezioni pertinenti per approfondire ogni concetto.",
+    "terms": [
+        {
+            "term": "Socket",
+            "definition": "Un punto finale per la comunicazione tra due dispositivi su una rete.",
+            "link_text": "Socket",
+            "link": "socket.html"
+        },
+        {
+            "term": "Client",
+            "definition": "Un dispositivo o un'applicazione che invia richieste a un server per accedere a risorse o servizi.",
+            "link_text": "Processo di comunicazione",
+            "link": "socket.html#processo-di-comunicazione-server-e-client"
+        },
+        {
+            "term": "Server",
+            "definition": "Un dispositivo o un'applicazione che fornisce risorse o servizi in risposta alle richieste del client.",
+            "link_text": "Processo di comunicazione",
+            "link": "socket.html#processo-di-comunicazione-server-e-client"
+        },
+        {
+            "term": "TCP (Transmission Control Protocol)",
+            "definition": "Un protocollo orientato alla connessione che garantisce una trasmissione affidabile dei dati.",
+            "link_text": "TCP/UDP",
+            "link": "tcp_udp.html#tcp"
+        },
+        {
+            "term": "UDP (User Datagram Protocol)",
+            "definition": "Un protocollo senza connessione che consente una trasmissione rapida ma non garantisce l'affidabilità dei dati.",
+            "link_text": "TCP/UDP",
+            "link": "tcp_udp.html#udp"
+        },
+        {
+            "term": "Modello OSI",
+            "definition": "Un modello di riferimento che divide le comunicazioni di rete in sette livelli.",
+            "link_text": "Modello OSI",
+            "link": "osi.html"
+        },
+        {
+            "term": "Indirizzo IP",
+            "definition": "Un identificatore unico per dispositivi su una rete. Utilizzato per instradare i dati al dispositivo corretto.",
+            "link_text": "Modello OSI",
+            "link": "osi.html#livello-rete"
+        },
+        {
+            "term": "Porta",
+            "definition": "Un numero che identifica in modo univoco un processo o un'applicazione in esecuzione su un dispositivo. Usato insieme all'indirizzo IP per identificare una socket."
+        },
+        {
+            "term": "Comunicazione Client-Server",
+            "definition": "Un modello in cui il client invia richieste e il server fornisce risposte.",
+            "link_text": "Processo di comunicazione",
+            "link": "socket.html#processo-di-comunicazione-server-e-client"
+        },
+        {
+            "term": "Protocollo",
+            "definition": "Un insieme di regole che definiscono come i dati vengono trasmessi e ricevuti su una rete.",
+            "link_text": "TCP/UDP",
+            "link": "tcp_udp.html"
+        }
+    ],
+    "footer": "Davide Aggio - Classe 5F"
+}
